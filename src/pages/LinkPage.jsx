@@ -7,7 +7,6 @@ import useFetch from "@/hooks/use-fetch";
 import { Copy, Download, LinkIcon, Trash2 } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { BarLoader, BeatLoader } from "react-spinners";
 import DeviceStats from "@/components/DeviceStats";
 import LocationStats from "@/components/LocationStats";
 
@@ -31,11 +30,11 @@ const LinkPage = () => {
     fnStats(id);
   }, [fn, fnStats, id, user?.id]);
 
-  // useEffect(() => {
-  //   if (error) {
-  //     navigate("/dashboard");
-  //   }
-  // }, [error, navigate]);
+  useEffect(() => {
+    if (error) {
+      navigate("/dashboard");
+    }
+  }, [error, navigate]);
 
   let link = "";
   if (url) {
@@ -62,9 +61,6 @@ const LinkPage = () => {
 
   return (
     <>
-      {/* {(loading || loadingStats) && (
-        <BarLoader className=" mb-4" width={"100%"} color={"#36d7b7"} />
-      )} */}
       {copied && (
         <div className="absolute top-2 right-2 bg-green-500 text-white px-3 py-1 rounded-lg text-sm transition-all duration-300">
           Copied!
