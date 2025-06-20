@@ -41,7 +41,9 @@ const LinkPage = () => {
     link = url?.custom_url ? url?.custom_url : url?.short_url;
   }
   const handleCopy = () => {
-    navigator.clipboard.writeText(`https://trimrr.app/${url?.short_url}`);
+    navigator.clipboard.writeText(
+      `https://trimrr-amber.vercel.app/${url?.short_url}`
+    );
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -73,10 +75,10 @@ const LinkPage = () => {
           </span>
           <a
             className=" text-3xl sm:text-4xl text-blue-400 font-bold hover:underline cursor-pointer"
-            href={`https://trimrr.app/${link}`}
+            href={`https://trimrr-amber.vercel.app/${link}`}
             target="_blank"
           >
-            https://trimrr.app/{link}
+            https://trimrr-amber.vercel.app/{link}
           </a>
           <a
             className=" flex gap-1 items-center hover:underline cursor-pointer"

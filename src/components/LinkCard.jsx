@@ -10,7 +10,9 @@ const LinkCard = ({ url, fetchUrls }) => {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(`https://trimrr.app/${url?.short_url}`);
+    navigator.clipboard.writeText(
+      `https://trimrr-amber.vercel.app/${url?.short_url}`
+    );
     setCopied(true);
     setTimeout(() => setCopied(false), 2000); // hide after 2s
   };
@@ -48,7 +50,7 @@ const LinkCard = ({ url, fetchUrls }) => {
           {url?.title}
         </span>
         <span className="text-2xl text-blue-400 font-bold hover:underline cursor-pointer">
-          https://trimrr.app/
+          https://trimrr-amber.vercel.app/
           {url?.custom_url ? url?.custom_url : url?.short_url}
         </span>
         <span className="flex items-center gap-1 hover:underline cursor-pointer">
