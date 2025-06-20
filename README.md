@@ -19,14 +19,14 @@ This project was built from scratch integrating authentication, protected routin
 
 -  **Click Tracking:**  
   Records each time a short URL is visited, logging:
-  - **Device type** (mobile, desktop, etc.)
-  - **Visitor’s city and country** (via `ipapi.co`)
+   - **Device type** (mobile, desktop, etc.)
+   - **Visitor’s city and country** (via `ipapi.co`)
 
 -  **Analytics Dashboard:**  
   View:
-  - Total clicks
-  - Top cities by clicks
-  - Device type distribution (pie and line charts via Recharts)
+   - Total clicks
+   - Top cities by clicks
+   - Device type distribution (pie and line charts via Recharts)
 
 -  **Protected Routes:**  
   Authenticated access only for:
@@ -34,9 +34,9 @@ This project was built from scratch integrating authentication, protected routin
   - Individual Link Stats (`/link/:id`)
 
 -  **Copy, Download, Delete**  
-  - Copy short URL
-  - Download QR Code image
-  - Delete URL (with confirmation)
+   - Copy short URL
+   - Download QR Code image
+   - Delete URL (with confirmation)
 
 ---
 
