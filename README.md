@@ -146,7 +146,7 @@ npm run dev
 
 ---
 
-## 📣 Author
+##  Author
 
 Made by **Rahul**
 
