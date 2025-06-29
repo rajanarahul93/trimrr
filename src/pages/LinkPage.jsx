@@ -9,6 +9,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import DeviceStats from "@/components/DeviceStats";
 import LocationStats from "@/components/LocationStats";
+import { BeatLoader } from "react-spinners";
 
 const LinkPage = () => {
   const { user } = UrlState();
